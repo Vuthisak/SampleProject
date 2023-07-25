@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "SampleProject"
 include(":app")
 include(":common")
+include(":mlkit")
