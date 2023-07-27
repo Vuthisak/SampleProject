@@ -42,7 +42,6 @@ dependencies {
     implementation(project(":common"))
 
 
-    implementation(libs.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.marterial)
     implementation("com.google.android.material:material:1.9.0")

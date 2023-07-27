@@ -37,7 +37,6 @@ android {
 dependencies {
     implementation(project(":common"))
 
-    implementation(libs.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.marterial)
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
