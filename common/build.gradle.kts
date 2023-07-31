@@ -41,6 +41,7 @@ dependencies {
     api(libs.core.ktx)
 
     implementation(libs.appcompat)
+    implementation(libs.marterial)
 
     testImplementation(tests.junit)
     androidTestImplementation(tests.junit.ext)
