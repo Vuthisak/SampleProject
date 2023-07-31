@@ -6,7 +6,6 @@ plugins {
 android {
     namespace = "com.vuthisak.sampleproject"
     compileSdk = 33
-
     defaultConfig {
         applicationId = "com.vuthisak.sampleproject"
         minSdk = 24
@@ -42,8 +41,9 @@ dependencies {
     implementation(project(":mlkit"))
     implementation(project(":common"))
 
-    implementation("androidx.core:core-ktx:1.10.1")
-    implementation("androidx.appcompat:appcompat:1.6.1")
+
+    implementation(libs.appcompat)
+    implementation(libs.marterial)
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     testImplementation("junit:junit:4.13.2")
