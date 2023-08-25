@@ -2,7 +2,6 @@ package com.vuthisak.sampleproject
 
 import android.os.Bundle
 import com.vuthisak.common.base.BaseActivity
-import com.vuthisak.mlkit.creditscanner.CreditMlScannerFragment
 import com.vuthisak.sampleproject.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity() {
