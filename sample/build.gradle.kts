@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.sample"
+    namespace = "com.vuthisak.sample"
     compileSdk = 33
 
     defaultConfig {

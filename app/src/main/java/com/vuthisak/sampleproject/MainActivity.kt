@@ -2,14 +2,14 @@ package com.vuthisak.sampleproject
 
 import android.os.Bundle
 import com.vuthisak.common.base.BaseActivity
-import com.vuthisak.mlkit.creditscanner.CreditMlScannerFragment
+import com.vuthisak.sample.fragment.RecyclerSampleFragment
 import com.vuthisak.sampleproject.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    private val fragment = CreditMlScannerFragment()
+    private val fragment = RecyclerSampleFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -21,7 +21,7 @@ class MainActivity : BaseActivity() {
     private fun setupFragmentContainer() {
         supportFragmentManager
             .beginTransaction()
-            .add(fragment, fragment.tag)
+            .add(binding.mainFragmentContainer.id, fragment)
             .commit()
     }
 

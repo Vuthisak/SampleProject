@@ -40,6 +40,7 @@ android {
 dependencies {
     implementation(project(":mlkit"))
     implementation(project(":common"))
+    implementation(project(":sample"))
 
     implementation(libs.appcompat)
     implementation(libs.marterial)
