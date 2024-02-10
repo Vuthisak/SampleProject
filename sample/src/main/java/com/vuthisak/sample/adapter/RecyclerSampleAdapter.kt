@@ -2,9 +2,9 @@ package com.vuthisak.sample.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.example.sample.databinding.ItemRecyclerSampleBinding
 import com.vuthisak.common.base.BaseRecyclerAdapter
 import com.vuthisak.common.base.BaseViewHolder
+import com.vuthisak.sample.databinding.ItemRecyclerSampleBinding
 
 class RecyclerSampleAdapter
     : BaseRecyclerAdapter<String, RecyclerSampleAdapter.ViewHolder>(mutableListOf()) {

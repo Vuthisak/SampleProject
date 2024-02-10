@@ -39,9 +39,13 @@ dependencies {
 
     // share dependencies
     api(libs.core.ktx)
-
-    implementation(libs.appcompat)
-    implementation(libs.marterial)
+    api(libs.appcompat)
+    api(libs.material)
+    // compose libs
+    api(composes.ui)
+    api(composes.uiGraphic)
+    api(composes.uiToolingPreview)
+    api(composes.material3)
 
     testImplementation(tests.junit)
     androidTestImplementation(tests.junit.ext)

@@ -38,8 +38,6 @@ android {
 dependencies {
     implementation(project(":common"))
 
-    implementation(libs.appcompat)
-    implementation(libs.marterial)
     implementation(libs.constraintLayout)
 
     testImplementation("junit:junit:4.13.2")

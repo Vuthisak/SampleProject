@@ -42,8 +42,6 @@ dependencies {
     implementation(project(":common"))
     implementation(project(":sample"))
 
-    implementation(libs.appcompat)
-    implementation(libs.marterial)
     implementation(libs.constraintLayout)
 
     testImplementation(tests.junit)
