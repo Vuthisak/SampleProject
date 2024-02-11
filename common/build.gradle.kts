@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.vuthisak.common"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 24
@@ -32,6 +32,12 @@ android {
     }
     buildFeatures {
         viewBinding = true
+    }
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.4.1"
     }
 }
 

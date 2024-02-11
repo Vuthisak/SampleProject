@@ -2,14 +2,14 @@ package com.vuthisak.sampleproject
 
 import android.os.Bundle
 import com.vuthisak.common.base.BaseActivity
-import com.vuthisak.sample.fragment.RecyclerSampleFragment
+import com.vuthisak.sample.fragment.SampleFragment
 import com.vuthisak.sampleproject.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    private val fragment = RecyclerSampleFragment()
+    private val fragment = SampleFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityMainBinding.inflate(layoutInflater)

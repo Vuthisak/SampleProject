@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.vuthisak.sample"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 24
@@ -33,6 +33,12 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.4.1"
+    }
 }
 
 dependencies {
@@ -43,4 +49,5 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    debugImplementation("androidx.compose.ui:ui-tooling:1.6.1")
 }
