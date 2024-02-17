@@ -8,16 +8,12 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.asIntState
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableIntStateOf
-import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.compose.ui.unit.dp
-import androidx.core.graphics.component1
-import androidx.core.graphics.component2
 import androidx.viewpager2.widget.ViewPager2
 import com.vuthisak.common.base.BaseFragment
 import com.vuthisak.common.composeui.CustomTab
@@ -41,6 +37,7 @@ class SampleFragment : BaseFragment(R.layout.fragment_sample) {
 
     private fun setupUi() = with(binding) {
         viewPager.adapter = ScreenSlidePagerAdapter(childFragmentManager, lifecycle)
+        val width = requireActivity().resources.getDimension(R.dimen.dp_100)
         viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageScrolled(
                 position: Int,
@@ -49,10 +46,7 @@ class SampleFragment : BaseFragment(R.layout.fragment_sample) {
             ) {
                 super.onPageScrolled(position, positionOffset, positionOffsetPixels)
                 if (position == this@SampleFragment.position.value) {
-                    val width = requireActivity().resources.getDimension(R.dimen.dp_100)
-                    Log.d("@@@", positionOffset.toString())
-                    offset.value =
-                        (positionOffset * width) * (position + 1)
+                    offset.value = ((positionOffset * position) * width).toFloat()
                 }
             }
 
